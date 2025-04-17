@@ -76,14 +76,12 @@ function Form() {
 
     return (
         <>
-            <div className="d-flex">
+            <div className="d-flex row">
 
-                <form onSubmit={inputHandler} className="col-7 pt-4 pb-2 shadow">
+                <form onSubmit={inputHandler} className="col-lg-7 col-12 pt-4 pb-2 shadow order-lg-1 order-2">
                     <div className="form-group row">
-                        <div className="col-2  align-content-center">
-                            <label>Name </label>
-                        </div>
-                        <div className="col-6">
+                        <label className="col-sm-2  align-content-center">Name </label>
+                        <div className="col-sm-6">
                             <input
                                 value={name}
                                 onChange={(e) => setName(e.target.value)}
@@ -92,7 +90,7 @@ function Form() {
                                 placeholder="Enter name"
                             />
                         </div>
-                        <label htmlFor="age" className="col-sm-1 col-form-label text-center">Age</label>
+                        <label htmlFor="age" className="col-sm-1 col-form-label">Age</label>
                         <div className="col-sm-3">
                             <input
                                 type="number"
@@ -175,7 +173,7 @@ function Form() {
 
                         {maritalStatus === 'Married' && (
                             <>
-                                <div className="row mt-3">
+                                <div className="row mt-lg-3">
                                     <label htmlFor="spouseName" className=" col-sm-3 col-form-label">
                                         Spouse Name
                                     </label>
@@ -189,7 +187,7 @@ function Form() {
                                             onChange={(e) => setSpouseName(e.target.value)}
                                         />
                                     </div>
-                                    <label htmlFor="spouseAge" className="text-center col-sm-1 col-form-label">
+                                    <label htmlFor="spouseAge" className=" col-sm-1 col-form-label">
                                         Age
                                     </label>
                                     <div className="col-sm-2">
@@ -207,7 +205,7 @@ function Form() {
                         )}
 
                         {gender === 'Male' && (
-                            <div className="row p-0 m-0 mt-3">
+                            <div className="row p-0 m-0 mt-lg-3">
                                 <label htmlFor="monthlyEarning" className="col-sm-3 col-form-label ">Monthly Earning</label>
                                 <div className="col-sm-4">
                                     <select
@@ -238,14 +236,14 @@ function Form() {
                                     </select>
                                 </div>
 
-                                <div className="col-12 d-flex mt-3">
-                                    <label htmlFor="resident" className="col-sm-3 mt-3 col-form-label ">Resident</label>
-                                    <div className="col-9">
+                                <div className=" row m-0 p-0 mt-lg-3">
+                                    <label htmlFor="resident" className="col-lg-3 col-12 mt-3 col-form-label ">Resident</label>
+                                    <div className="col-lg-9 col-12">
                                         <input
                                             value={resident}
                                             onChange={(e) => setResident(e.target.value)}
                                             type="text"
-                                            className="form-control mt-3"
+                                            className="form-control mt-lg-3"
                                             placeholder="Enter residential Address"
                                         />
                                     </div>
@@ -256,14 +254,13 @@ function Form() {
 
                     </div>
 
-
-
                     <button type="submit" className="btn mt-4 shadow">
                         Submit
                     </button>
                 </form >
-                <div className="main-img col-5">
-                    <h1 className=" main-heading">Connect with us</h1>
+
+                <div className="main-img col-lg-5 col-12 order-lg-2 order-1 d-none d-md-block">
+                    <h1 className=" main-heading ">Connect with us</h1>
                 </div>
             </div >
         </>

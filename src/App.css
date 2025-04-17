@@ -120,7 +120,7 @@ input:focus {
   background-repeat: no-repeat;
   /* width: 20vw; */
   height: 76vh; 
-  border-radius: 0px 10px 10px 0px;
+  /* border-radius: 0px 10px 10px 0px; */
   margin: 0;
   padding: 0;
   /* opacity: 0.8 ; */
@@ -136,7 +136,7 @@ body{
 form{
   background-color: #f9f3fe;
   padding: 20px;
-  border-radius: 10px 0px 0px 10px;
+  /* border-radius: 10px 0px 0px 10px; */
 }
 button{
   background-color: #340065;
@@ -165,7 +165,15 @@ button{
   position: relative;
   top: 25%;
   color: #f9f3fe ;
-  font-size: 7rem;
+  font-size: 4rem;
   text-align: center;
   margin-bottom: 20px;
+}
+.table-responsive {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch; /* Enables momentum scrolling on iOS */
+}
+
+.table {
+  min-width: 1000px; /* Adjust based on your content */
 }

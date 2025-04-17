@@ -47,47 +47,47 @@ const DisplayInputs = () => {
     return (
         <div>
             <h1 className="">List of Users Deatils</h1>
-            <table className="table shadow table-bordered table-striped ">
-                <thead>
-                    <tr>
-                        <th scope="col">Sr No.</th>
-                        <th scope="col">Name </th>
-                        <th scope="col">Age</th>
-                        <th scope="col">Mobile</th>
-                        <th scope="col">Gender</th>
-                        <th scope="col">Marital Status</th>
-                        <th scope="col">Spouse Name</th>
-                        <th scope="col">Spouse Age</th>
-                        <th scope="col">Graduation</th>
-                        <th scope="col">Earning</th>
-                        <th scope="col">Own House</th>
-                        <th scope="col">Resident</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {inputs.map((input) => (
-                        <tr key={input.id}>
-                            <td scope="row">1</td>
-                            <td>{input.name}</td>
-                            <td>{input.age}</td>
-                            <td>{input.mobileNumber}</td>
-                            <td>{input.gender}</td>
-                            <td>{input.maritalStatus}</td>
-                            <td>{input.spouseName}</td>
-                            <td>{input.spouseAge}</td>
-                            <td>{input.graduateFrom}</td>
-                            <td>{input.monthlyEarning}</td>
-                            <td>{input.ownHouse}</td>
-                            <td>{input.resident}</td>
+            <div className="table-responsive">
+                <table className="table shadow table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">Name</th>
+                            <th scope="col">Age</th>
+                            <th scope="col">Mobile</th>
+                            <th scope="col">Gender</th>
+                            <th scope="col">Marital Status</th>
+                            <th scope="col">Spouse Name</th>
+                            <th scope="col">Spouse Age</th>
+                            <th scope="col">Graduation</th>
+                            <th scope="col">Earning</th>
+                            <th scope="col">Own House</th>
+                            <th scope="col">Resident</th>
                         </tr>
-                    ))}
+                    </thead>
+                    <tbody>
+                        {inputs.map((input) => (
+                            <tr key={input.id}>
+                                <td>{input.name}</td>
+                                <td>{input.age}</td>
+                                <td>{input.mobileNumber}</td>
+                                <td>{input.gender}</td>
+                                <td>{input.maritalStatus}</td>
+                                <td>{input.spouseName}</td>
+                                <td>{input.spouseAge}</td>
+                                <td>{input.graduateFrom}</td>
+                                <td>{input.monthlyEarning}</td>
+                                <td>{input.ownHouse}</td>
+                                <td>{input.resident}</td>
+                            </tr>
+                        ))}
+                    </tbody>
+                </table>
+            </div>
 
-                </tbody>
-            </table>
             <Link to="/">
                 <button className="me-4 shadow">Go to Form</button>
             </Link>
-            <button  className="shadow" onClick={goBack}>Go Back</button>
+            <button className="shadow" onClick={goBack}>Go Back</button>
         </div>
     );
 };
