@@ -254,9 +254,11 @@ function Form() {
 
                     </div>
 
-                    <button type="submit" className="btn mt-4 shadow">
-                        Submit
-                    </button>
+                    <a href="/display">
+                        <button type="submit" className="btn mt-4 shadow">
+                            Submit
+                        </button>
+                    </a>
                 </form >
 
                 <div className="main-img col-lg-5 col-12 order-lg-2 order-1 d-none d-md-block">

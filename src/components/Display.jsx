@@ -85,7 +85,9 @@ const DisplayInputs = () => {
             </div>
 
             <Link to="/">
-                <button className="me-4 shadow">Go to Form</button>
+                <a href="/">
+                    <button className="me-4 shadow">Go to Form</button>
+                </a>
             </Link>
             <button className="shadow" onClick={goBack}>Go Back</button>
         </div>
