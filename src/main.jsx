@@ -11,7 +11,7 @@ import DisplayInputs from './components/Display.jsx'
 
 const router = createHashRouter(
   createRoutesFromElements(
-    <Route path='/' element={<Layout />}>
+    <Route path='/userform' element={<Layout />}>
       <Route path='' element={<Form />} />
       <Route path='display' element={<DisplayInputs />} />
     </Route>
